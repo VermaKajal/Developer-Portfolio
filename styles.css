@@ -355,6 +355,74 @@ h1 {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
   }
+
+
+  @media (max-width: 762px) {
+    body {
+      padding: 0;
+    }
+  
+    .firstSection,
+    .secondSection,
+    .about-me,
+    .projects,
+    .participations,
+    .pursuits {
+      padding: 1rem;
+    }
+  
+    .rightSection img {
+      height: auto;
+    }
+  
+    .sections .sec-left {
+      margin-left: 0;
+    }
+  
+    .sections .sec-right img {
+      width: 80vw;
+      height: auto;
+      border-radius: 6px;
+    }
+  
+    .secondSection .grid-container {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+    }
+  
+    .card-container {
+      flex-direction: column;
+      row-gap: 20px;
+      column-gap: 0;
+    }
+  
+    .card {
+      width: 100%;
+      height: auto;
+    }
+  
+    .card .content h4 {
+      margin-top: 10px;
+      padding-bottom: 10px;
+    }
+  
+    .participations .participations-container .template img {
+      height: auto;
+    }
+  
+    .template {
+      font-size: 0.9rem;
+    }
+  
+    .footer {
+      flex-direction: column;
+      gap: 1rem;
+      padding: 1rem;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+  }
+  
 }
 
 .projects {
